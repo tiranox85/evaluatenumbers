@@ -4,7 +4,7 @@
 * Autor: Fernando Gil Quintero
 * email: tiranox85@hotmail.com
 */
-require_once('MandatoryInterface.php');
+require_once('Mandatory.php');
 /**
  * Class to evaluate numbers
  */
