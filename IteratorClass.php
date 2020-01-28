@@ -27,7 +27,7 @@ class IteratorClass extends LogicClass
   public function iterate(){
     $temp=[];
     for ($i=1; $i <= $this->range; $i++) {
-      $val=$this->logic->is_multiple_of($i,$this->evaluate);
+      $val=$this->is_multiple_of($i,$this->evaluate);
       $temp[$i]=$val;
     }
     return $temp;
@@ -42,7 +42,7 @@ class IteratorClass extends LogicClass
     $numbers=$this->iterate();
     $temp=[];
     foreach ($numbers as $number=>$eva_result) {
-      $message=$this->logic->message($number,$eva_result);
+      $message=$this->message($number,$eva_result);
       $temp[$number]=$message;
     }
     return $temp;
